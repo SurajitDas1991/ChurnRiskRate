@@ -17,6 +17,7 @@ def prepare_project():
     delete_create_existing_folders(VISUALIZATION_PATH)
     delete_create_existing_folders(METRICS_PATH)
     delete_create_existing_folders(MODELS_PATH)
+    delete_create_existing_folders(NOTEBOOKS_PATH)
     delete_create_existing_folders(TRAINING_PROCESSED_DATA_FOLDER)
     delete_create_existing_folders(FINAL_MODEL_PATH)
     delete_create_existing_folders(DATABASE_FOLDER)
@@ -62,7 +63,7 @@ def get_folder_path(*path):
     return cwd
 
 
-LOGS_PATH=get_folder_path("src","logs")
+LOGS_PATH=get_folder_path("logs")
 NOTEBOOKS_PATH=get_folder_path("notebooks")
 VISUALIZATION_PATH = get_folder_path("reports", "figures")
 METRICS_PATH = get_folder_path("reports","metrics")
